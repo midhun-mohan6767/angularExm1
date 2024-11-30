@@ -1,0 +1,12 @@
+<div *ngIf="!loginShow" class="container-fluid bg-dark vh-100">
+    <div class="row justify-content-center align-items-center h-100 text-white">
+        <div class="container rounded w-50 h-50 bg-secondary">
+            <input [(ngModel)]="userName" name="userName" class="form-control form-control-lg my-5" type="text" placeholder="user name" aria-label=".form-control-lg example">
+            <input [(ngModel)]="password" name="password" class="form-control form-control-lg my-5" type="password" placeholder="password" aria-label=".form-control-lg example">
+<div class="text-end">
+                <button  class="btn btn-primary mx-5 " (click)="login()">submit</button>
+    
+</div>        </div>
+    </div>
+</div>
+
